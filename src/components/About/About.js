@@ -40,16 +40,16 @@ function About() {
         </Row>
       </Container>
       <h2 className="text-center">The Founders</h2>
-      <div className="flex flex-row justify-center gap-[200px] my-4">
-        <div>
-          <img className="w-[300px] h-[300px] rounded-full" src={phuong} />
-          <h5 className="text-center my-[30px]">Hoàng Lê Thành Phương</h5>
-        </div>
-        <div>
-          <img className="w-[300px] h-[300px] rounded-full" src={phi} />
-          <h5 className="text-center my-[30px]">Nguyễn Công Phi</h5>
-        </div>
-      </div>
+      // <div className="flex flex-row justify-center gap-[200px] my-4">
+      //   <div>
+      //     <img className="w-[300px] h-[300px] rounded-full" src={phuong} />
+      //     <h5 className="text-center my-[30px]">Hoàng Lê Thành Phương</h5>
+      //   </div>
+      //   <div>
+      //     <img className="w-[300px] h-[300px] rounded-full" src={phi} />
+      //     <h5 className="text-center my-[30px]">Nguyễn Công Phi</h5>
+      //   </div>
+      // </div>
     </>
   );
 }
