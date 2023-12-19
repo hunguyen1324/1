@@ -6,7 +6,7 @@ import contact_us from '../../assets/images/contactUs.jpg';
 import { UserContext } from '../../context/UserContext';
 
 function ContactUs() {
-    const {  user } = useContext(UserContext);
+  const { user } = useContext(UserContext);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -33,10 +33,10 @@ function ContactUs() {
     }
   };
   useEffect(() => {
-    if (user && user.auth ) {
-        setName(user.username);
-        setEmail(user.email);
-        setPhoneNumber(user.phone);
+    if (user && user.auth) {
+      setName(user.username);
+      setEmail(user.email);
+      setPhoneNumber(user.phone);
 
     }
   }, [])
@@ -44,9 +44,9 @@ function ContactUs() {
 
   return (
     <>
-      <div className="relative"> 
-        <img src={contact_us} alt="" />
-        <p className="absolute bottom-[70px] left-[63px] text-white text-[48px] leading-[48px]">CONTACT US</p>
+      <div className="relative  w-full">
+        <img className="w-full" src={contact_us} alt="" />
+        <p className="absolute bottom-[70px] left-[63px] text-black text-[48px] leading-[48px]">CONTACT US</p>
       </div>
 
       <Container className="my-[100px]">
@@ -124,8 +124,8 @@ function ContactUs() {
               <h3 className="text-[24px] font-bold leading-[48px]">
                 Visit Us
               </h3>
-              <p className="m-0 text-[16px]">UET Lahore, Punjab, Pakistan</p>
-              <p className="m-0 text-[16px]">Phone: +923039898987</p>
+              <p className="m-0 text-[16px]">Da Nang, Vietnam</p>
+              <p className="m-0 text-[16px]">Phone: +84763.752.544</p>
             </div>
             <div>
               <h3 className="text-[24px] font-bold leading-[48px]">
@@ -134,7 +134,7 @@ function ContactUs() {
               <p className="m-0 text-[16px]">
                 You can get in touch with us on this provided email.
               </p>
-              <p className="m-0 text-[16px]">hmjawad087@gmail.com</p>
+              <p className="m-0 text-[16px]">haitt.bkdn@gmail.com</p>
             </div>
           </Col>
         </Row>

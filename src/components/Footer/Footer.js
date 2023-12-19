@@ -19,7 +19,7 @@ const Footer = () => {
           <Container className="py-4 flex flex-row">
             <div className="mr-[100px]">
               <p className="text-[36px] mb-0 mr-[100px] font-semibold">
-                2P-Fashion
+                2H - Cosmetics
               </p>
             </div>
             <div>
@@ -36,22 +36,16 @@ const Footer = () => {
                 <p>Hướng dẫn mua hàng</p>
                 <p>Chính sách đổi trả hàng</p>
                 <p>Chính sách thanh toán</p>
-                <p>Điều khoản sử dụng</p>
-                <p>Website</p>
-                <p>Bảo mật thông tin KH</p>
               </div>
             </div>
             <div>
               <h4>CONTACT US</h4>
               <div className="flex flex-col">
                 <p className="flex flex-row items-center">
-                  <FaMapMarkerAlt className="mr-3"/> Store I: 445 Sư Vạn Hạnh, P.12, Q.10.
+                  <FaMapMarkerAlt className="mr-3" /> 9 Hà Văn Tính, Liên Chiểu, Đà Nẵng
                 </p>
-                <p className="flex flex-row items-center">
-                  <FaMapMarkerAlt className="mr-3"/> Store II: 48 Trần Quang Diệu, P.14, Q.3.
-                </p>
-              
-                <p className="flex flex-row items-center"><BsFillTelephoneFill className="mr-3"/> 0978788888</p>
+
+                <p className="flex flex-row items-center"><BsFillTelephoneFill className="mr-3" /> 0978788888</p>
               </div>
             </div>
           </Container>

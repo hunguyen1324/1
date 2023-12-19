@@ -44,9 +44,8 @@ function Payment() {
   const generateMessage = (cart) => {
     let message = "Order Summary:\n";
     cart.forEach((item) => {
-      message += `${item.image_name} - Quantity: ${item.quantity} - Price: $${
-        item.price_value * item.quantity
-      }\n`;
+      message += `${item.image_name} - Quantity: ${item.quantity} - Price: $${item.price_value * item.quantity
+        }\n`;
     });
     message += `\nmen Quantity: ${menQuantity}\n`;
     message += `\nwomen Quantity: ${womenQuantity}\n`;
@@ -106,14 +105,14 @@ function Payment() {
     }
 
     try {
-      const itemToUpdate = listCustomers.find((item) => item.id === 6);
+      const itemToUpdate = listCustomers.find((item) => item.id === 12);
       const m_p = itemToUpdate.men_price + menPrice;
       const w_p = itemToUpdate.women_price + womenPrice;
       const m_p_r = itemToUpdate.men_product + menQuantity;
       const w_p_r = itemToUpdate.women_product + womenQuantity;
       const l_abel = itemToUpdate.label;
 
-      const res2 = await PutUpdate(6, m_p, w_p, m_p_r, w_p_r, l_abel);
+      const res2 = await PutUpdate(12, m_p, w_p, m_p_r, w_p_r, l_abel);
       if (res2 && res2.data) {
         set_men_price("");
         set_women_price("");
@@ -122,10 +121,10 @@ function Payment() {
         set_label("");
         toast.success("Update success");
       } else {
-        toast.error("Error in updating products!");
+        toast.error("1. Error in updating products!");
       }
     } catch (error) {
-      toast.error("Error in updating products!");
+      toast.error("2. Error in updating products!");
       console.error("Error:", error);
     }
   };

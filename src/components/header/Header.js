@@ -39,15 +39,14 @@ function Header() {
       <div className="bg-gray-400 header-container">
         <Navbar expand="lg" className="container">
           <Container fluid>
-            <img
-              src={logoApp}
-              width="50px"
-              height="50px"
-              className="d-inline-block align-top"
-              alt="React Bootstrap logo"
-            />
-            <Navbar.Brand as={Link} to="/">
-              <p className="text-[36px] mb-0 mr-[100px]">Fashion</p>
+            <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
+              <img
+                src={logoApp}
+                width="50px"
+                height="50px"
+                className="d-inline-block align-top"
+                alt="React Bootstrap logo"
+              />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll " />
             <Navbar.Collapse id="navbarScroll">
@@ -61,9 +60,8 @@ function Header() {
                     <Nav.Link
                       as={NavLink}
                       to="/"
-                      className={`nav-link font-bold ${
-                        pathname === "/" ? "active" : ""
-                      }`}
+                      className={`nav-link font-bold ${pathname === "/" ? "active" : ""
+                        }`}
                     >
                       <p className="text-[16px] m-0 font-bold a">HOME</p>
                     </Nav.Link>
@@ -72,18 +70,16 @@ function Header() {
                         <Nav.Link
                           as={NavLink}
                           to="/store"
-                          className={`nav-link font-bold ${
-                            pathname === "/store" ? "active" : ""
-                          }`}
+                          className={`nav-link font-bold ${pathname === "/store" ? "active" : ""
+                            }`}
                         >
                           <p className="text-[16px] m-0 font-bold a">SHOP</p>
                         </Nav.Link>
                         <Nav.Link
                           as={NavLink}
                           to="/contactUs"
-                          className={`nav-link font-bold ${
-                            pathname === "/contactUs" ? "active" : ""
-                          }`}
+                          className={`nav-link font-bold ${pathname === "/contactUs" ? "active" : ""
+                            }`}
                         >
                           <p className="text-[16px] m-0 font-bold a">
                             CONTACT US
@@ -102,9 +98,8 @@ function Header() {
                     <Nav.Link
                       as={NavLink}
                       to="/about"
-                      className={`nav-link font-bold ${
-                        pathname === "/about" ? "active" : ""
-                      }`}
+                      className={`nav-link font-bold ${pathname === "/about" ? "active" : ""
+                        }`}
                     >
                       <p className="text-[16px] m-0 font-bold a">ABOUT</p>
                     </Nav.Link>
@@ -158,7 +153,7 @@ function Header() {
           dataUserEdit={dataUserEdit}
           handleClose={handleClose}
         />
-      </div>
+      </div >
     </>
   );
 }

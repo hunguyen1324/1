@@ -115,11 +115,11 @@ function Home() {
 
   return (
     <>
-    <STYLIST_PICKS/>
+      <STYLIST_PICKS />
       <Container>
         <Accordion className='my-3' defaultActiveKey="0">
           <Accordion.Item >
-            <Accordion.Header><strong>ACTION</strong></Accordion.Header>
+            <Accordion.Header><strong>FILTER</strong></Accordion.Header>
             <Accordion.Body>
               <div className='col-4 my-3'>
                 <span>
@@ -172,7 +172,7 @@ function Home() {
                     const [selectedSortBy, selectedSortField] = selectedOption.split("-");
                     handleSort(selectedSortBy, selectedSortField);
                   }}
-                  className="ml-10" 
+                  className="ml-10"
                 >
                   <option value="">Select Time</option>
                   <option value="asc-id">Oldest</option>
@@ -185,7 +185,7 @@ function Home() {
         <div className='my-3 add-new'>
           <div className='col-4 '>
             <input className='form-control'
-              placeholder='search products by name'
+              placeholder='Search products by name'
               //  value={keyWord}
               onChange={(event) => handleSearch(event)}
             ></input>

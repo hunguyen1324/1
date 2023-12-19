@@ -13,11 +13,8 @@ import phi from "../../assets/images/phi.jpg";
 function About() {
   return (
     <>
-      <div className="relative">
-        <img src={img_about} alt="" />
-        <p className="absolute bottom-[70px] left-[63px] text-white text-[48px] leading-[48px]">
-          ABOUT <span className="italic">2P-FASHION</span>{" "}
-        </p>
+      <div className="relative w-full">
+        <img className="w-full" src={img_about} alt="" />
       </div>
       <Container className="my-[60px]">
         <Row>
@@ -39,7 +36,6 @@ function About() {
           </Col>
         </Row>
       </Container>
-      <h2 className="text-center">The Founders</h2>
     </>
   );
 }
